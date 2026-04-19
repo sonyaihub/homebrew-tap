@@ -5,21 +5,21 @@
 class Wut < Formula
   desc "Route accidental natural-language shell input to your AI harness"
   homepage "https://github.com/sonyaihub/wut"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sonyaihub/wut/releases/download/v0.2.0/wut_Darwin_x86_64.tar.gz"
-      sha256 "b99b0970c5bf468e4f414a233ba4c27f8df18ca2122dc3c4256a3f2f8425567f"
+      url "https://github.com/sonyaihub/wut/releases/download/v0.2.1/wut_Darwin_x86_64.tar.gz"
+      sha256 "f33dfb76353ec11f59e07ee3d17a24016cdbcf14c33140f00e56dad934bf2c49"
 
       define_method(:install) do
         bin.install "wut"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sonyaihub/wut/releases/download/v0.2.0/wut_Darwin_arm64.tar.gz"
-      sha256 "1b3e8e2a4d6445b1783fbfc8090d34f1f6687036634a5e4266bf300de7b0ca83"
+      url "https://github.com/sonyaihub/wut/releases/download/v0.2.1/wut_Darwin_arm64.tar.gz"
+      sha256 "5a1c9fcbe7f72745113e176311a6cc6df86200cf10aa88a6d5b5704467b11730"
 
       define_method(:install) do
         bin.install "wut"
@@ -29,15 +29,15 @@ class Wut < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sonyaihub/wut/releases/download/v0.2.0/wut_Linux_x86_64.tar.gz"
-      sha256 "0c38f88f2602265134d08ab9e6b20520d68e60213ce7abc336d57a747ca3e550"
+      url "https://github.com/sonyaihub/wut/releases/download/v0.2.1/wut_Linux_x86_64.tar.gz"
+      sha256 "bb9c0b4adc7937ae04ff2d660ca12dbab9153d2ab8c4ed38976b0485b379663a"
       define_method(:install) do
         bin.install "wut"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sonyaihub/wut/releases/download/v0.2.0/wut_Linux_arm64.tar.gz"
-      sha256 "bb1c33fb58216ef049065549b4111bd9669488ddac77f7937b30c5137c3ff9a7"
+      url "https://github.com/sonyaihub/wut/releases/download/v0.2.1/wut_Linux_arm64.tar.gz"
+      sha256 "59b49e4bfc36f89c7886fb4d8a20749755d078f99ffe5f36c6ba93d31b649d5e"
       define_method(:install) do
         bin.install "wut"
       end
